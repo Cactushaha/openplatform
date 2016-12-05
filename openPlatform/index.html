@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>民生移动开放平台</title>
+    		<link rel="stylesheet" href="css/bootstrap.css" >
+    		<link rel="stylesheet" href="css/bootstrap-responsive.css" >
+   	 	<link rel="stylesheet" href="css/iconfont.css" >
+   	 	<link rel="stylesheet" href="css/styles.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-static-top nav-style">
+			<div class="navbar-inner navbar-header">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navbar-collapse">
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+			    </button>
+				<a class="brand logo-padd" href="#"><img src="img/logo.png" width="280"></a>
+				<div class="nav-collapse collapse" id="navbar-collapse">
+					<ul class="nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle username" data-toggle="dropdown" href="#">
+								<i class="headimg"><img src="img/touxiang.jpg" width="80"></i>
+								<span>测试：2016072803</span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dropdown-style">
+								<li><a href="#">修改密码</a></li>
+								<li><a href="#find-password"  data-toggle="tab">找回密码</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="logout" href="#">
+								<i class="iconfont">&#xe607;</i>
+								<span>退出</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-style">
+			<ul class="sidebar-menu" style="margin-top: 64px;" >
+			    <li class="active">
+				    <a href="#index" class="nav nav-list nav-header menu-first collapse"  data-toggle="tab">
+				   	 	<i class="iconfont">&#xe608;</i>
+				   	 	首页
+				    </a>
+			    </li>
+			    <li>
+				    <a href="#refund-manage" class="nav nav-list nav-header menu-first collapse"  data-toggle="tab">
+				   	 	<i class="iconfont">&#xe603;</i>
+				   	 	退款管理
+				    </a>
+			    </li>
+			    <li>
+				    <a href="#refund-statistics" class="nav-header menu-first collapse" data-toggle="tab">
+					    <i class="iconfont">&#xe600;</i>
+					   	退款统计
+				    </a>
+			    </li>
+			    <li>
+				    <a href="#account" class="nav-header menu-first collapse" data-toggle="tab">
+				   	 	<i class="iconfont">&#xe606;</i>
+				   	 	对账单管理
+				    </a>
+			    </li>
+			    <li>
+				    <a href="#deal" class="nav-header menu-first collapse " data-toggle="tab">
+				        <i class="iconfont">&#xe601;</i>
+				   	     交易查询
+				    </a>
+			    </li>
+			    <li>
+				    <a href="#operater" class="nav-header menu-first collapse" data-toggle="tab">
+				   	 	<span class="iconfont">&#xe605;</span>
+				   	 	操作员管理
+				    </a>
+			    </li>
+			    <li>
+				    <a href="#role" class="nav-header menu-first collapse" data-toggle="tab">
+				   	 	<span class="iconfont">&#xe602;</span>
+				   	 	角色管理
+				    </a>
+			    </li>
+			    <li>
+			</ul>
+		</div>
+		<div class="right-content">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="tab-content">
+							<div class="tab-pane active" id="index">
+								<div class="login-info">
+									<div class="login-img">
+										<img src="img/touxiang.jpg">
+									</div>
+						            <div class="login-message">
+							            	<h1>尊敬的<span class="fontc">测试2016072803</span>，您好！</h1>
+							            	<p>
+							            		<i class="iconfont colorb">&#xe60d;</i>
+							            		<span class="color666">上次登录时间：2016-07-30 10:38:29</span>
+							            	</p>
+						            </div>
+						            <div class="loginfo-right">
+							            <div class="code-img">
+							            		<img src="img/erweima_03.png" class="width60">
+							            </div>
+							            <div class="r-img">
+								            	<div class="Query-img iconfont iconfont-r">&#xe606;</div>
+								            	<a class="Query-text">对账单查询</a>
+							            </div>
+						            </div>
+								</div>
+						        <div class="login-content">
+							        	<div class="c-table">
+							        		<div class="table-title">
+							        			<div class="table-t">
+							        				<p class="tab-list">最近一周的销售金额(元)</p>
+							        			    <p class="figure">38,881,940.93</p>
+							        			</div>
+							        			<div class="table-t">
+							        				<p class="tab-list">最近一周销售笔数(笔)</p>
+							        			    <p class="figure">19627</p>
+							        			</div>
+							        			<div class="table-t borderno">
+							        				<p class="tab-list">人均金额(元)</p>
+							        			    <p class="figure">2,150.74</p>
+							        			</div>
+							        		</div>
+							        		<div class="chart-box">
+							        			<div id="chart04" class="chart01_sty" style="width: 100%; height: 100%; "></div>
+							        		</div>
+							        	</div>
+								    <div class="c-notice">
+								    	<div class="n-title">
+								    		<i class="iconfont t-icon">&#xe609;</i>
+								    		<span class="t-title">公告信息</span>
+								    		<i class="iconfont t-icon floatr paddingr20">&#xe60c;</i>
+								    	</div>
+								    	<div class="n-contest">
+								    		<p class="lineh30"><a>商务平台改版上线啦</a><span class="floatr">2016/07/18</span></p>
+								    	    <p class="lineh30"><a>民生银行网上银行全新改版</a><span class="floatr">2016/07/18</span></p>
+								    	    <p class="lineh30"><a>商务平台</a><span class="floatr">2016/07/18</span></p>
+								    	    <p class="lineh30"><a>商务平台改版上线啦</a><span class="floatr">2016/07/18</span></p>
+								    	    <p class="lineh30"><a>商务平台改版上线啦</a><span class="floatr">2016/07/18</span></p>
+								    	</div>
+								    	
+								    </div>
+								</div>
+							</div>
+							<div class="tab-pane" id="refund-manage">
+								<input />
+							</div>
+							<div class="tab-pane" id="refund-statistics">
+								ddd
+							</div>
+							<div class="tab-pane" id="operater"> <!--操作员管理-->
+								 <!--新增操作员-->
+								<div class="res-title">
+										<h3 class="pull-left">新增操作员</h3>
+								</div>
+								<div class="pagebg">
+									<div class="margin_l25 margin_t20">
+										<h4><i class="iconfont fonts20 colorb paddingl10">&#xe615;</i> 基本信息</h4>
+										<hr/>
+									</div>
+									<div class="form-inline m-massage">
+										<div >
+										<div class="margin_l36 dis_in_blo">
+											<span class="c_red">*</span>
+										    <span class="margin_r7">登录名</span>
+										    <input type="text" class="login-input">
+										    <p class="c_red position_xia">请输入登录名</p>
+										</div>
+										<div class="dis_in_blo margin_l43">
+										<span class="c_red">*</span>
+										<span class="margin_r7">姓名</span>
+										<input type="text" class="login-input">
+										</div>
+									</div>
+									<div class="margin_t36 margin_l19 margin_b24">
+										<span class="c_red">*</span>
+										<span class="margin_r7">手机号码</span>
+										<input type="text" class="login-input">
+									</div>
+			                        </div>
+			                       </div>
+								<div class="pagebg">
+									<div class="margin_l25 margin_t20">
+										<h4><i class="iconfont fonts20 colorb paddingl10">&#xe616;</i>权限信息</h4>
+										<hr/>
+										<div class="clearfix margin_b20">
+											<div class="margin_t9 margin_l36 dis_in_blo float_left">
+												<div class="float_left">
+												<p class="margin_r7 margin_t9"><span class="c_red">*</span>用户角色</p>
+												</div>
+												<div class="float_left user-role">
+													<div class="margin_l3 margin_t9 ">测试2016072803
+													<i class="iconfont fonts20 paddingl10 floatr">&#xe616;</i>
+													</div>
+													<div class="margin_l3 margin_t9 ">测试2016072803
+													<i class="iconfont fonts20 paddingl10 floatr">&#xe616;</i>
+													</div>
+												</div>
+											</div>
+										
+											<div class="dis_in_blo margin_l43 margin_t18 float_left">
+												<p class="margin_r7 margin_t9 float_left"><span class="c_red">*</span>选择</p>
+												<select>
+													<option>--请选择--</option>
+													<option>1</option>
+													<option>2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="login-content mobile-contest height_auto">
+							        		<table class="t-table">
+								        		<thead class="bgcolor-grey lineh58">
+								        			<td class="paddingrl10"><input type="checkbox"></input></td>
+								        			<th>角色编号</th>
+								        			<th>角色名称</th>
+								        			<th>角色说明</th>
+								        		</thead>
+								        		<tbody>
+								        			<tr class="lineh58">
+								        				<td class="paddingrl10"><input type="checkbox"></input></td>
+								        				<td>201608080001</td>
+								        				<td>测试2016072803</td>
+								        				<td>201608001</td>
+								        			</tr>
+									</tbody>
+								</table>
+								</div>
+								<div class="margin_b24 margin_t18">
+									<div class="btn-qq">
+			                        <button class="btn-quary">提交</button>
+			                        <button class="btn-quary margin_l25">返回</button>
+			                        </div>
+								</div>
+								
+							</div>
+							<div class="tab-pane min_width_894" id="find-password"> <!--找回密码-->
+								<div class="res-title">
+										<h3 class="pull-left">找回密码</h3>
+								</div>
+								<div class="pagebg text-center">
+									<div class="dis_in_blo">
+									<div class="d1 margin_t22">
+										<i class="iconfont">&#xe613;</i>
+										<input type="text" class="input_find" placeholder="用户名">
+									</div>
+									<div class="d1 margin_t7">
+										<i class="iconfont">&#xe617;</i>
+										<input type="text" class="input_find" placeholder="登录名">
+									</div>
+									<div class="margin_t7 clearfix">
+										<div class="d2 float_left">
+											<i class="iconfont position_shoujihao">&#xe618;</i>
+											<input type="text" class="position_i3 input_findd" placeholder="手机号">
+										</div>
+										<div class="float_left margin_l18">
+										 <button class="btn-send">发送验证码</button>
+										 </div>
+									 </div>
+									<div class="d1 margin_t7">
+										<i class="iconfont">&#xe619;</i>
+										<input type="text" class="input_find" placeholder="手机验证码">
+									</div >
+									 <div class="btn-q">
+			                            		<button class="btn-quary margin_b20">提交</button>
+			                            </div>
+								</div>
+									</div>
+								
+								
+							</div>
+							<div class="tab-pane min_width_894" id="deal"> <!--交易查询开始-->
+								<!--<div class="deal-select"  hidden="hidden">
+									<div class="res-title">
+										<h3 class="pull-left">交易查询</h3>
+									</div>
+							        <div class="res-content">
+			                            <p class="res-main"><span><i class="iconfont paddingr10 t-icon ">&#xe60e;</i></span >请选择产品分类</p>
+			                            <div class="res-line"></div>
+			                            <div class="res-icon">
+			                            	<div class="ricon margin_r30 bordercg">
+			                            		<div class="triangle-m"></div>
+			                            		<img src="img/mobile_03.png" class="bg-icon">
+			                            		<p class="bg-colorg">移动支付</p>
+			                            		<i class="iconfont icon-s">&#xe60f;</i>
+			                            	</div>
+			                            	<div class="ricon bordercb">
+			                            		<div class="triangle-c"></div>
+			                            		<img src="img/quare_05.png" class="bg-icon">
+			                            		<p class="bg-colorb">刷卡支付</p>
+			                            		<i class="iconfont icon-s">&#xe60f;</i>
+			                            	</div>
+			                            </div>
+									</div>
+									<button class="btn-nstep">下一步</button>
+								</div>-->
+								<div class="deal-check ">
+									<div class="res-title">
+										<h3 class="pull-left">移动支付交易查询</h3>
+										<a class="dl-font margin_t20">实时对账单下载<i class="iconfont fonts20 colorb paddingl10">&#xe60b;</i></a>
+									</div>
+									<div class="login-info height140 width_100">
+										<div class="form-inline m-massage">
+			                                <div class="form-group in-text margin_r30">
+			                                    <label class="form-label">商户订单号</label>
+			                        		    		<input type="text" class="form-control login-input">
+			                                </div>
+			                                <div class="form-group in-text margin_r30">
+			                                    <label class="form-label">开始日期</label>
+			                       		        <input type="text" class="login-input">
+			                       		        <!--<i class="iconfont f-icon">&#xe611;</i>-->
+			                                </div>
+			                                <div class="form-group in-text">
+			                                    <label class="form-label">结束日期</label>
+			                       		        <input type="text" class="login-input">
+			                       		        <!--<i class="iconfont">&#xe611;</i>-->
+			                                </div>
+			                            </div>
+			                            <div class="btn-q">
+			                            		<button class="btn-quary">查询</button>
+			                            </div>
+									</div>
+							        <div class="login-content mobile-contest">
+							        		<table class="t-table">
+								        		<thead class="bgcolor-grey lineh58">
+								        			<td class="paddingrl10"><input type="checkbox"></input></td>
+								        			<th>商户订单号</th>
+								        			<th>银行流水号</th>
+								        			<th>通道订单号</th>
+								        			<th>交易类型</th>
+								        			<th>交易日期</th>
+								        			<th>交易时间</th>
+								        			<th>交易金额(元)</th>
+								        			<th>实扣手续费(元)</th>
+								        			<th>支付状态</th>
+								        			<th>收银员</th>
+								        			<th>手机号</th>
+								        			<th>支付银行</th>
+								        		</thead>
+								        		<tbody>
+								        			<tr class="lineh58">
+								        				<td class="paddingrl10"><input type="checkbox"></input></td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">456789</td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">商务型</td>
+								        				<td class="paddingrl10">2016-8-10</td>
+								        				<td class="paddingrl10">13：30</td>
+								        				<td class="fontcs paddingrl10">10,000</td>
+								        				<td class="paddingrl14">100</td>
+								        				<td class="paddingrl10">已完成</td>
+								        				<td>ceshi08</td>
+								        				<td>13454234523</td>
+								        				<td>民生银行</td>
+								        			</tr>
+								        			<tr class="bgcolor-lg lineh58">
+								        				<td class="paddingrl10"><input type="checkbox"></input></td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">456789</td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">商务型</td>
+								        				<td class="paddingrl10">2016-8-10</td>
+								        				<td class="paddingrl10">13：30</td>
+								        				<td class="fontcs paddingrl10">10,000</td>
+								        				<td class="paddingrl14">100</td>
+								        				<td class="paddingrl10">已完成</td>
+								        				<td>ceshi08</td>
+								        				<td>13454234523</td>
+								        				<td>民生银行</td>
+								        			</tr>
+								        			<tr class="lineh58">
+								        				<td class="paddingrl10"><input type="checkbox"></input></td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">456789</td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">商务型</td>
+								        				<td class="paddingrl10">2016-8-10</td>
+								        				<td class="paddingrl10">13：30</td>
+								        				<td class="fontcs paddingrl10">10,000</td>
+								        				<td class="paddingrl14">100</td>
+								        				<td class="paddingrl10">已完成</td>
+								        				<td>ceshi08</td>
+								        				<td>13454234523</td>
+								        				<td>民生银行</td>
+								        			</tr>
+								        			<tr class="bgcolor-lg lineh58">
+								        				<td class="paddingrl10"><input type="checkbox"></input></td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">456789</td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">商务型</td>
+								        				<td class="paddingrl10">2016-8-10</td>
+								        				<td class="paddingrl10">13：30</td>
+								        				<td class="fontcs paddingrl10">10,000</td>
+								        				<td class="paddingrl14">100</td>
+								        				<td class="paddingrl10">已完成</td>
+								        				<td>ceshi08</td>
+								        				<td>13454234523</td>
+								        				<td>民生银行</td>
+								        			</tr>
+								        			<tr class="lineh58">
+								        				<td class="paddingrl10"><input type="checkbox"></input></td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">456789</td>
+								        				<td class="paddingrl10">123456</td>
+								        				<td class="paddingrl10">商务型</td>
+								        				<td class="paddingrl10">2016-8-10</td>
+								        				<td class="paddingrl10">13：30</td>
+								        				<td class="fontcs paddingrl10">10,000</td>
+								        				<td class="paddingrl14">100</td>
+								        				<td class="paddingrl10">已完成</td>
+								        				<td>ceshi08</td>
+								        				<td>13454234523</td>
+								        				<td>民生银行</td>
+								        			</tr>
+								        		</tbody>
+							        		</table>
+									</div>
+									<div class="res-title">
+										<div class="overflowh">
+											<p class="download">每页显示
+												<select class="fenye marginr15">
+													<option>1</option>  
+										            <option>5</option>  
+										            <option>10</option>
+												</select>
+												共有3条信息</p>
+											<p class="floatr page-box">
+												<span id="first-page" class="iconfont">&#xe61b;</span>
+												<span id="pre-page" class="iconfont">&#xe61e;</span>
+												<span class="page-num">
+													第
+													<select class="fenye marginr15">
+														<option>1</option>  
+											            <option>2</option>  
+											            <option>3</option>  
+											            <option>4</option>  
+											            <option>5</option> 
+													</select>
+													页/共5页
+												</span>
+												<span id="next-page" class="iconfont">&#xe61f;</span>
+												<span id="last-page" class="iconfont">&#xe61c;</span>
+											</p>
+										</div>
+										<div>
+											<p class="colory">操作提示：对当月的交易信息进行查询。</p>
+										</div>
+									</div>
+								</div>
+							<!--交易查询结束-->
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.9.1.min.js"></script>
+    		<script src="js/bootstrap.js"></script>
+    		<script src="js/echarts.common.min.js"></script>
+    		<script src="js/statiChart.js"></script>
+    		<script type="text/javascript">
+    			document.body.addEventListener('touchstart', function () { });  //保证手机端按钮或链接active效果
+    			
+    		</script>
+	</body>
+</html>

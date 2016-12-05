@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+	<head>
+	    <meta charset="utf-8" />
+	    <title>登录</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="IE=9">
+	    <link rel="stylesheet" href="css/bootstrap.css" >
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" >
+	 	<link rel="stylesheet" href="css/iconfont.css" >
+	 	<link rel="stylesheet" href="css/newcss.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+	</head>	
+	<body>
+	<!--header-->
+		<div class="navbar navbar-inverse navbar-static-top log-nav">
+			<div class="navbar-inner navbar-header">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navbar-collapse">
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+				    </button>
+					<a class="brand logo-padd" href="#"><img src="img/minshenglogo.png" width="300"></a>
+					<div class="nav-collapse collapse" id="navbar-collapse">
+						<ul class="nav">
+							<li class="dropdown">
+								<a class="dropdown-toggle merchant" href="#">
+									商户中心
+								</a>
+							</li>
+							<li>
+								<a class="developer" href="#">
+									开发者中心
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	    <div class="banner1">
+	        <div class="container">
+		        <div class="denglu">
+		            <div class="user-ps">
+			            <h3 class="p_l18 f_33">安全信息</h3>
+			            <div class="kuang1 m_l15 m_t15">
+			                <i class="iconfont user-icon">&#xe613;</i>
+			                <input placeholder="登录账号">
+			            </div>
+			            <div class="kuang1 m_l15 m_t10">
+			                <i class="iconfont user-icon">&#xe612;</i>
+			                <input id="input1" type="password" placeholder="登录密码">
+			            </div>
+			            <div class="code-box">
+				            <input class="code-input m_t10 m_l15 dis_inline_b">
+				            <img style="height: 40px;width: 100px" src="img/yanzhnengma_03.png">
+			                <a class="f_33 m_l10">换一张</a>
+			            </div>
+			            <div class="remeb-user">
+			                <a class="pull-left">记住账号</a>
+			                <a class="pull-right">忘记密码?</a>
+			            </div>
+			            <a><button class="kuang3 m_l15" >登&nbsp;&nbsp;录</button></a>
+		            </div>
+		            <div class="message" style="display: none;">
+			            <div class="kuang2 m_t10 m_l15 dis_inline_b">
+			                <input type="text">
+			            </div>
+			            <button class="code-btn">发送验证码</button>
+		            </div>
+		        </div>
+	        </div>
+	    </div>	
+	    <div class="container" >
+		    <div class=" m_t30 m_b15 f_c3" style="height: 20px;position: relative">
+		        <div class="daohang1">
+			        	<span class="notice-lab">最新公告</span>
+			        <div id="news01" class="new01">
+				        <span>[09.28]</span>
+				        <span>移动收单开放平台上线了！</span>
+				        <i class="iconfont new-item">&#xe614;</i>
+			        </div>
+			        <div id="news02" class="new01">
+				        <span>[09.28]</span>
+				        <span>移动收单开放平台上线了！</span>
+			        </div>
+		        </div>
+		    </div>
+	    </div>
+	    <div class="container paddingtb30">
+	    		<div id="pay-func" class="row">
+	    			<div class="span4">
+	    				<div class="pay-func">
+		                <img src="img/icon1.png" >
+		                <h5 class="f_c3 text-center">乐收银支付</h5>
+		                <span class="f_c2 text-center">标准规范的服务，主力商户收款</span>
+		            </div>
+	    			</div>
+	    			<div class="span4">
+	    				<div class="pay-func">
+		                <img src="img/icon2.png" >
+		                <h5 class="f_c3 text-center">乐收银支付</h5>
+		                <span class="f_c2 text-center">标准规范的服务，主力商户收款</span>
+		            </div>
+	    			</div>
+	    			<div class="span4">
+	    				<div class="pay-func">
+		                <img src="img/icon3.png" >
+		                <h5 class="f_c3 text-center">乐收银支付</h5>
+		                <span class="f_c2 text-center">标准规范的服务，主力商户收款</span>
+		            </div>
+	    			</div>
+	    		</div>
+	    </div>
+	    <div class="img-colum" style="width: 100%; overflow: hidden">
+	        <img class="float_left" src="img/p01.png">
+	        <img class="float_left" src="img/p02.png">
+	        <img id="p03" class="float_left" src="img/p03.png">
+	        <img class="float_left" src="img/p04.png">
+	    </div>
+	    <div class="img-colum" style="width: 100%; overflow: hidden">
+	        <img class="float_left" src="img/p05.png">
+	        <img class="float_left" src="img/p06.png">
+	        <img id="p07" class="float_left" src="img/p07.png">
+	        <img class="float_left" src="img/p08.png">
+	    </div>
+    
+	    <div class="footer">
+	        <div class="footer-link text-center ">
+	            <a class="text-center f_18 " style="display: inline-block;">法律声明</a>
+	            <span>|</span>
+	            <a class="text-center f_18 " style="display: inline-block">隐私权政策</a>
+	            <span>|</span>
+	            <a class="text-center f_18" style="display: inline-block">联系我们</a>
+	            <span>|</span>
+	            <a class="text-center f_18" style="display: inline-block">民生招聘</a>
+	            <span>|</span>
+	            <a class="text-center f_18 " style="display: inline-block">电子邮件</a>
+	        </div>
+	        <p>中国民生银行 京ICP证040430号 京ICP备050203752号 电信业务审批 【2012】 字第440函</p>
+	        <p>24小时客户服务热线 : 95568  对公专线 : 4006895568 小微金额服务专线 : 4006895568 电信业务审批【2012】 字第520函</p>
+	    </div>
+	    <script src="js/jquery-1.9.1.min.js"></script>
+	    	<script src="js/bootstrap.js"></script>
+	    	<script type="text/javascript">
+			document.body.addEventListener('touchstart', function () { });  //保证手机端按钮或链接active效果
+			
+		</script>
+	</body>
+</html>
